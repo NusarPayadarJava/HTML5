@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Undersökningsformulär</title>
+</head>
 
+<body>
+
+<h1>Undersökningsformulär; <br>
+Detta är en undersökning för alla anställda.</h1>
+
+<form action="/form_page.php">
+<br>
+  <p><i>Tränar ni någon sport?</i></p>
+  <input type="radio" id="yes" >
+  <label for="ja">Ja</label><br>
+  <input type="radio" id="nej" >
+  <label for="nej">Nej</label>
+  <br>
+  <br>
+
+
+  <p><strong>
+  <i>på vilket/vilka sätt som denna föredrar att läsa om intressanta saker:</i>
+  </strong> </p>
+  <input type="checkbox" id="checkbox1" >
+<label for="bok"> Böcker</label><br>
+<input type="checkbox" id="checkbox2" >
+<label for="tidning"> Tidningar </label><br>
+<input type="checkbox" id="checkbox3">
+<label for="online"> Online</label><br>
+  <br>
+  <br>
+
+   <label for="film">Välja din favoritgenre i film:</label>
+    <select name="film" id="film">
+    <option value="välje" selected>Välje</option>
+    <option value="action">Action</option>
+    <option value="romantik">Romantik</option>
+    <option value="komedi">Komedi</option>
+    <option value="drama">Drama</option>
+    <option value="skräck">Skräck</option>
+
+  </select><br>
+
+<br>
+<br>
+ <label for="text">Beskriva kort om dig själv:</label><br>
+
+  <textarea
+  id="id1" name="name1" rows="4" cols="30" style="color:White;background-color:gray;">Berätta lite om din fritid, familje osv.
+  </textarea>
+<br>
+<br>
+<br>
+
+<b>Mata in för och efternamn: <b><br>
+  <br>
+  <label for="fname">förnamn:</label><br>
+    <input type="text" id="fname" name="fname"maxlength="20" size="35" value="måste fyllas i"><br>
+    <label for="lname">efternamn:</label><br>
+    <input type="text" id="lname" name="lname"maxlength="20" size="35" value="måste fyllas i"><br><br>
+    <input type="submit" value="Skicka">
+
+
+  <p>När du klicka på "Skicka-knappen" all data som du har skrivits<br>
+    i webbformuläret kommer att skickas vidare och sparas på webbservern. </p>
+
+</form>
+
+</body>
+</html>
