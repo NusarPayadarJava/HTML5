@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+      <div id="mySidenav" class="sidenav">
+        <a class="active" href="indexproject.html">Startsida</a>
+        <a href="contact.html">Contact</a>
+        <a href="photoes.html">photoes</a>
+        <a href="about.html">about</a>
+      </div>
+      
+      <div class="main">
+        <div class="contact">
+          <br>
+        <p>Adress: Coffee Bistro Italia <br>
+        bolagsgatan 12<br>
+        123 45   CapitalCity<br>
+        <br>
+        
+      </div>
+        
+      <h2>Contact Form</h2>
+
+        <div class="container">
+          <form  action="mailto:nusar.payadar@utb.ecutbildning.se" 
+          method="post" enctype="text/plain"></form>
+
+
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">e-mail</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your e-mail..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Sweden</option>
+              <option value="canada">Norway</option>
+              <option value="usa">Finland</option>
+              <option value="usa">Denmark</option>
+
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+            
+            
+            <input id="id1" type="number" min="15" max="25" required>
+            <button onclick="myFunction()">OK</button>            
+            
+            <p id="validate"></p>
+            
+            <script>
+            function myFunction() {
+              var inpObj = document.getElementById("id1");
+              if (!inpObj.checkValidity()) {
+                document.getElementById("validate").innerHTML = inpObj.validationMessage;
+              } else {
+                document.getElementById("validate").innerHTML = "Input OK";
+              } 
+            } 
+            </script>
+            
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+
+        <p>
+        </div>
+</body>
+<footer> 
+  <div class="fot">
+  <p>Bolagsgatan 12 CapitalCity<br>
+  Tel: 012345678</p>
+
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://twitter.com" class="fa fa-twitter"></a>
+<a href="https://google.com" class="fa fa-google"></a>
+<a href="https://se.linkedin.com/" class="fa fa-linkedin"></a>
+</div>
+</footer>
+</html>
