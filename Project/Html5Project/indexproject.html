@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html  lang="en">
+ 
+  
+  <head> 
+    <title>Coffee Shop</title>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+   </head>
 
-  <header>
-  
-     
-    <canvas id="myCanvas" width="500" height="90"> </canvas>
-    
+  <header>     
+    <canvas id="myCanvas" width="500" height="90"> </canvas>    
 
     <script>
       var c = document.getElementById("myCanvas");
@@ -30,11 +30,25 @@
     </script> 
    
   </header>
+  
+    
+  
   <div class ="feed">
-    <div id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:hidden;width:200px;background-color:#transparent; border:1px solid #333333;"> <div id="rsswidget" style="height:500px;"><iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1604401312482&amp;x=http%3A%2F%2Fsvt.se%2Fnyheter%2Fregionalt%2Fsydnytt%2Frss.xml&amp;w=200&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=transparent&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:200px; height:500px;background-color: rgb(146, 241, 241);" id="rssOutput" frameborder="no">Reading RSS Feed ...</iframe></div><div style="text-align:right;margin-bottom:0;border-top:1px solid #333333;" id="widgetbottom"><br></div></div>
+   
+      
+      <div id="feedrss" >
+       <iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1604401312482&amp;x=http%3A%2F%2Fsvt.se%2Fnyheter%2Fregionalt%2Fsydnytt%2Frss.xml&amp;w=200&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=transparent&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12"  
+         > 
+       </iframe>
+      </div>
+     
+      
+   
   </div>
 
-<body>
+
+  
+    
   
   
 <div  class="sidenav">
@@ -51,11 +65,12 @@
         <article class="all-paragraf">
           
           <h2>Choose your Service: Breakfast, Lunch, Dinner </h2> 
+        
           
           <article class="paragraf">
             
               <img src="cbild.jpg" alt="Italian food" 
-              style="float: right;"; width="150" height="125";margin-right:15px;> 
+              style="float:right;" width="150" height="125" > 
               <h2>Bistro Breakfast</h2> 
              - coffee and croissant -  <br>                   
                 sandwiches <br>
@@ -68,7 +83,7 @@
           <article class="paragraf">
             
              <img src="fbild.jpg" alt="Italian food" 
-              style="float: right;"; width="150" height="125";margin-right:15px;> 
+              style="float:right" width="150" height="125"> 
             <h2>Bistro Main food</h2> 
               - Thai Chicken -  <br>
               spiced chicken <br>
@@ -79,7 +94,7 @@
           </article>
           <article class="paragraf">
             <img src="bbild.jpg" alt="Italian food" 
-              style="float: right;"; width="150" height="125";margin-right:15px;> 
+              style="float:right" width="150" height="125"> 
             <h2>Bistro Dinner</h2>
               - Paprika Roast Chicken - <br>
                  Canvas aioli<br>
@@ -97,9 +112,10 @@
     </div>
 
    
-
-  </body>
-    <footer> 
+  
+ 
+  <footer>
+    
       <div class="fot">
       <p>Bolagsgatan 12 CapitalCity<br>
       Tel: 012345678</p>
@@ -112,5 +128,5 @@
 <a href="https://se.linkedin.com/" class="fa fa-linkedin"></a>
 </div>
     </footer>
-   
+  
 </html>
